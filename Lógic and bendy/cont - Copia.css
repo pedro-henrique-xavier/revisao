@@ -1,0 +1,219 @@
+body {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "section section section"
+    "footer footer footer";
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    height: 100vh;
+}
+
+.desc{
+    
+    display: block;
+    margin: 24px 0; 
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.titulos{ 
+    display: block;
+    margin: 32px 0; 
+    color: #ffffff;
+}
+
+.imagem_logo {
+    transform: translate(245%, -7%);
+    width: 300px;
+    height: 300px;
+}
+
+.disc {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    grid-area: header;
+    /*background-color: #ccc;*/
+    padding: 10px;
+}
+
+nav {
+    display: block;
+    position: absolute;
+    margin-top: -100px;
+        left: 50%;
+            transform: translateX(-50%);
+                    padding: 15px;
+            grid-area: nav;
+        background-color: #ffffff;
+    border-radius: 40px;
+font-family: Andale Mono, monospace;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer {
+    grid-area: footer;
+    color: white;
+    padding: 10px;
+}
+
+article {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-height: 180px;
+    max-width: 700px;
+    margin-bottom: -150px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a::after {
+    content: " " ;
+    width: 0%;
+    height: 4px;
+    background-color: gray;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+}
+
+body {
+    position: relative;
+  }
+
+body {
+    position: relative;
+}
+
+
+body{ font:100% normal Arial, Helvetica, sans-serif; background:#161712;}
+
+form,input,select,textarea{margin:0; padding:0; color:#ffffff;}
+
+div.box {   
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin:0 auto;
+    width:500px;
+    background:#222222;
+    position:relative;
+    border:1px solid #262626;
+    margin-bottom: 190px;
+}
+
+div.box h1 {
+    color:#ffffff;
+    font-size:18px;
+    text-transform:uppercase;
+    padding:5px 0 5px 5px;
+    border-bottom:1px solid #161712;
+    border-top:1px solid #161712;
+}
+
+div.box label {
+    width:100%;
+    display: block;
+    background:#1C1C1C;
+    border-top:1px solid #262626;
+    border-bottom:1px solid #161712;
+    padding:10px 0 10px 0;
+}
+
+div.box label span {
+    display: block;
+    color:#bbbbbb;
+    font-size:12px;
+    float:left;
+    width:100px;
+    text-align:right;
+    padding:5px 20px 0 0;
+}
+
+div.box .input_text {
+    padding:10px 10px;
+    width:200px;
+    background:#262626;
+    border-bottom: 1px double #171717;
+    border-top: 1px double #171717;
+    border-left:1px double #333333;
+    border-right:1px double #333333;
+}
+
+div.box .message{
+    padding:7px 7px;
+    width:350px;
+    background:#262626;
+    border-bottom: 1px double #171717;
+    border-top: 1px double #171717;
+    border-left:1px double #333333;
+    border-right:1px double #333333;
+    overflow:hidden;
+    height:150px;
+}
+
+div.box .button{
+    margin:0 0 10px 0;
+    padding:4px 7px;
+    background:#CC0000;
+    border:0px;
+    position: relative;
+    top:10px;
+    left:382px;
+    width:100px;
+    border-bottom: 1px double #660000;
+    border-top: 1px double #660000;
+    border-left:1px double #FF0033;
+    border-right:1px double #FF0033;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 160%;
+    height: 100%;
+    background-image: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%), url(/imgs/cont.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    filter: saturate(0.5);
+    filter: brightness(90%) blur(2px) grayscale(100%) /*drop-shadow(7px 20px 0px #000000)*/;
+    z-index: -1;
+  } 
+  
+
+
+

@@ -1,0 +1,184 @@
+body {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "section section section"
+    "footer footer footer";
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    height: 100vh;
+    background-color: #161616;
+}
+
+.titulos { 
+    display: block;
+    margin: 10px 0; 
+    color: #ffffff;
+}
+
+.serv {
+    font-size: large;
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #ffffff;
+}
+
+.imagem_logo {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+}
+
+
+header {
+    grid-area: header;
+    /*background-color: #ccc;*/
+    padding: 10px;
+}
+
+nav {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    grid-area: nav;
+    background-color: #ffffff;
+    border-radius: 40px;
+    font-family: Andale Mono, monospace;
+    
+}
+
+section {
+    display: grid;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: section;
+    background-color: #ffffff11;
+    padding: 10px;
+    border-radius: 20px;
+    height: 800px;
+    width: 610px;
+    margin: 20px auto 0;
+
+ 
+}
+
+section a {
+    color: white;
+}
+section img {
+    max-width: 250px;
+    max-height: 110px;
+}
+
+section ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+section ul li {
+    display: inline-block;
+    padding-right: 2px;
+}
+
+section figure figcaption {
+    display: block;
+    margin: 10px 0; 
+    color: #ffffff;
+    font-size: medium;
+    max-width: 200px;
+}
+section figure {
+         width: 70%;
+         transition: .4s all ease-in-out;
+}
+
+section figure:hover {
+    transform: scale(1.2);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a::after {
+    content: " " ;
+    width: 0%;
+    height: 4px;
+    background-color: gray;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+}
+
+body {
+    position: relative;
+  }
+
+  body {
+    position: relative;
+  }
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 160%;
+    height: 100%;
+    background-image: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%), url(/imgs/pc2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    filter: saturate(0.5);
+    filter: brightness(90%) blur(2px) grayscale(100%);
+    z-index: -1;
+  } 
+
+footer {
+    grid-area: footer;
+    color: white;
+    padding: 10px;
+}
+
+footer div {
+    display: block;
+    text-align: center;
+}
+
+footer div a img{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    max-width: 30px;
+    max-height: 30px;
+}

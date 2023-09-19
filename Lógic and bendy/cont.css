@@ -1,0 +1,196 @@
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 160%;
+    height: 100%;
+    background-image: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%), url(/imgs/cont.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    filter: saturate(0.5);
+    filter: brightness(90%) blur(2px) grayscale(100%) /*drop-shadow(7px 20px 0px #000000)*/;
+    z-index: -1;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "section section section"
+    "footer footer footer";
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    height: 100vh;
+    position: relative;
+    font:100% normal Arial, Helvetica, sans-serif;
+    background:#161712;
+}
+
+header {
+    grid-area: header;
+    padding: 10px;
+}
+
+footer {
+    grid-area: footer;
+    color: white;
+    padding: 10px;
+}
+
+.imagem_logo {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+}
+
+nav {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    grid-area: nav;
+    background-color: #ffffff;
+    border-radius: 40px;
+    font-family: Andale Mono, monospace;
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a::after {
+    content: " " ;
+    width: 0%;
+    height: 4px;
+    background-color: gray;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+}
+
+form,input,select,textarea{margin:0; padding:0; color:#ffffff;}
+
+
+form {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: section;
+    background-color: #ffffff11;
+    padding: 10px;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    margin: 20px auto 0;
+    border:1px solid #262626
+}
+
+form fieldset {
+    margin:0 auto;
+    width:500px;
+    background:#222222;
+    position:relative;
+    border:1px solid #fc0404;
+}
+
+form fieldset legend {
+    text-align: center;
+}
+
+form fieldset span {
+    display: block;
+    color:#bbbbbb;
+    font-size:12px;
+    float:left;
+    width:100px;
+    text-align:right;
+    padding:5px 20px 0 0;
+}
+
+form fieldset input {
+    padding:10px 10px;
+    width:200px;
+    background:#262626;
+    border-bottom: 1px double #171717;
+    border-top: 1px double #171717;
+    border-left:1px double #333333;
+    border-right:1px double #333333;
+}
+
+form fieldset textarea{
+    padding:7px 7px;
+    width:350px;
+    background:#262626;
+    border-bottom: 1px double #171717;
+    border-top: 1px double #171717;
+    border-left:1px double #333333;
+    border-right:1px double #333333;
+    overflow:visible;
+    height:150px;
+    max-width: 350px;
+}
+
+form .submit_button{   
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin:0 0 10px 0;
+    padding:4px 7px;
+    background:#CC0000;
+    border:0px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px double #660000;
+    border-top: 1px double #660000;
+    border-left:1px double #FF0033;
+    border-right:1px double #FF0033;
+}
+
+footer {
+    grid-area: footer;
+    color: white;
+    padding: 10px;
+}
+
+footer div {
+    display: block;
+    text-align: center;
+}
+
+footer div a img{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    max-width: 30px;
+    max-height: 30px;
+}
